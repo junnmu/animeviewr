@@ -41,7 +41,7 @@ export default function Index() {
 
             { found == true && (
                 <div className="profile-container">
-                    <div>
+                    <div className="card-profile">
                         <a target="_blank" href={profile.url}><p className="profile-name">{ profile.username }</p></a>
                         <img className="profile-img" src={profile.image_url} alt="Image" />
                         { profile.location != null && (
@@ -50,7 +50,7 @@ export default function Index() {
                         <p>Animes completos: { profile.anime_stats.completed }</p>
                         <p>Mangás completos: { profile.manga_stats.completed }</p>
                     </div>
-                    <div>
+                    <div className="card-animes-mangas">
                         <p className="animes-mangas">Mangás favoritos</p>
                         <ul>
                             { profile.favorites.manga.slice(0,9).map(manga => (

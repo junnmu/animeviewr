@@ -1,0 +1,86 @@
+.search-container {
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container form {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container form input {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 28px;
+    font-size: 16px;
+    color: #666
+}
+
+.search-container form input::placeholder {
+    color: #999
+}
+
+.search-container form button {
+    margin-top: 10px;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;
+    background: #0a56c9;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile-container {
+    width: 100vw;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.profile-name {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    color: #0a56c9;
+}
+
+.profile-img {
+    border-radius: 10px;
+}
+
+.img-mangas-animes {
+    width: 160px;
+    height: 220px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.animes-mangas {
+    font-size: 25px;
+    margin: 5px;
+    padding-left: 35px;
+    color: #0a56c9;
+}
+
+ul, li {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

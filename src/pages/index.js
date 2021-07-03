@@ -55,7 +55,7 @@ export default function Index() {
                         <ul>
                             { profile.favorites.manga.slice(0,9).map(manga => (
                                 <li key={manga.mal_id}>
-                                    <img src={manga.image_url} alt={manga.name} className="img-mangas-animes" />
+                                    <a href={manga.url} target="_blank"><img src={manga.image_url} alt={manga.name} className="img-mangas-animes" /></a>
                                 </li>
                             ))}
                         </ul>
@@ -63,7 +63,7 @@ export default function Index() {
                         <ul>
                             { profile.favorites.anime.slice(0,9).map(anime => (
                                 <li key={anime.mal_id}>
-                                    <img src={anime.image_url} alt={anime.name} className="img-mangas-animes" />
+                                    <a href={anime.url} target="_blank"><img src={anime.image_url} alt={anime.name} className="img-mangas-animes" /></a>
                                 </li>
                             ))}
                         </ul>
